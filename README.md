@@ -49,13 +49,6 @@ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> c
 sudo docker run hello-world
 ```
 
-
-
-sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io docker-compose-plugin
-
-
-
-
 Start docker with
 ```
 sudo systemctl start docker
@@ -64,4 +57,15 @@ Check if docker is running
 ```
 sudo systemctl status docker
 ```
+
+Got permission denied while trying to connect to the Docker daemon socket
+1. Try add yourself (user) to the group.
+```
+sudo gpasswd -a $USER docker
+```
+2. Set the proper permissions.
+```
+sudo setfacl -m user:<YOUR USERNAME>:rw /var/run/docker.sock
+```
+
 
