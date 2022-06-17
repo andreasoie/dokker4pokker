@@ -41,7 +41,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 2. Find and download a <VERSION_STRING> of your choice
 ```
-apt-cache madison docker-ce
+apt-cache madison docker-ce # e.g.: <VERSION_STRING> = 5:20.10.15~3-0~ubuntu-focal
 sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io docker-compose-plugin
 ```
 3. (Optional) Verify that Docker Engine is installed correctly by running the hello-world image.
