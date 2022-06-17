@@ -1,6 +1,10 @@
 # Docker Cheatcodes for Ubuntu
 
-Is docker running?
+Start docker with
+```
+sudo systemctl start docker
+```
+Check if docker is running
 ```
 sudo systemctl status docker
 ```
