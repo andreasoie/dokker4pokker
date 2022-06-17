@@ -1,2 +1,7 @@
-# dockercheats
-Docker for Dummies
+# Docker Cheatcodes for Ubuntu
+
+Is docker running?
+```
+sudo systemctl status docker
+```
+
