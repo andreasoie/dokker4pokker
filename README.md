@@ -49,6 +49,12 @@ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> c
 sudo docker run hello-world
 ```
 
+### Make Docker launch at start-up
+```
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+```
+
 Start docker with
 ```
 sudo systemctl start docker
