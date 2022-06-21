@@ -9,15 +9,15 @@ sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 ```
 
-##### Remove containers
+##### Remove all containers
 ```
 docker container rm $(docker container ls -aq)
 ```
-##### Remove images
+##### Remove all images
 ```
 docker image rm $(docker image ls -aq)
 ```
-##### Clean-up
+##### Remove all unused data
 ```
 docker system prune -y
 ```
