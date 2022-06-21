@@ -9,9 +9,7 @@
 ```
 Note: You must delete any edited configuration files manually.
 
-### Install Docker Engine
-
-#### A: Set up the repository
+#### Install Docker Engine
 Follow [instructions](https://docs.docker.com/engine/install/)
 
 ##### Make Docker launch at start-up
