@@ -9,8 +9,9 @@ sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 ```
 
-##### Remove all containers
+##### Stop and Remove all containers
 ```
+docker kill $(docker ps -q)
 docker container rm $(docker container ls -aq)
 ```
 ##### Remove all images
