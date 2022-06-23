@@ -19,5 +19,5 @@ docker image rm $(docker image ls -aq)
 ```
 ##### Remove all unused data
 ```
-docker system prune -y
+docker system prune
 ```
