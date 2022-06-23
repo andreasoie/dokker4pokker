@@ -22,3 +22,8 @@ docker image rm $(docker image ls -aq)
 ```
 docker system prune
 ```
+##### Remove services using your Docker port
+> Error starting userland proxy: listen tcp4 0.0.0.0:XXXX: bind: address already in use
+```
+sudo kill `sudo lsof -t -i:XXXX`
+```
