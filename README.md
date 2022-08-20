@@ -27,3 +27,12 @@ docker system prune
 ```
 sudo kill `sudo lsof -t -i:XXXX`
 ```
+
+##### When docker has ate all your disk space
+```
+sudo -s
+systemctl stop docker
+rm -rf /var/lib/docker
+systemctl start docker
+exit 
+```
