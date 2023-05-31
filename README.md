@@ -33,7 +33,7 @@ docker volume rm $(docker volume ls -q)
 sudo kill `sudo lsof -t -i:XXXX`
 ```
 
-##### When docker has ate all your disk space
+##### When Docker has consumed all your disk space
 ```bash
 sudo -s
 systemctl stop docker
